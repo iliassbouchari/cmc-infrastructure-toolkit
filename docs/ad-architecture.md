@@ -3,6 +3,8 @@
 Source: Rapport_Stage_CMC.pdf, chapters 3.1 and 3.2 (PDF p. 6), annex C (PDF p. 15).
 All IPs, hostnames and the domain name are placeholders.
 
+> Rapport_Stage_CMC.pdf is the original as submitted. It says 650 workstations and names supervisors. Repo text uses the corrected 850+ workstations, confirmed by the author on 27 Nov 2026. The PDF was left unchanged on purpose.
+
 ## Domain and DNS
 
 - Single forest, single domain: `domain.local`. The domain name is also the UPN suffix of every account.
