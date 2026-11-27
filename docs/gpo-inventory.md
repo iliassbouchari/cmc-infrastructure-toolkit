@@ -2,6 +2,8 @@
 
 Source: Rapport_Stage_CMC.pdf, chapters 3.4, 4.2 and 4.5 (PDF p. 8, 10, 12).
 
+> Rapport_Stage_CMC.pdf is the original as submitted. It says 650 workstations and names supervisors. Repo text uses the corrected 850+ workstations, confirmed by the author on 27 Nov 2026. The PDF was left unchanged on purpose.
+
 Main Group Policy Objects of the domain, their purpose and target OU.
 
 | GPO name | Purpose | Target OU |
