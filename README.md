@@ -17,17 +17,19 @@
 ## About this repo
 
 PowerShell scripts and procedures built during our end-of-studies internship at the
-**Cité des Métiers et des Compétences (CMC) Casablanca-Settat** (Jan 2026 – Jul 2026):
+**Cité des Métiers et des Compétences (CMC) Casablanca-Settat** (01 Jan – 24 Jun 2026, Stagiaire Technicien Systèmes & Réseaux):
 deployment, administration and support of the systems and network infrastructure:
 an 850+ workstation park across 10 training poles, centralized under a single
 Active Directory domain with GPO-driven software deployment and hardening.
 
-**Authors:** Iliass Bouchari & Mohamed Zegui, DTS Digital Infrastructure,
-Systems & Networks option, class IDOSR201.
+**Authors:** Iliass Bouchari & Mohamed Zegui, DTS Infrastructure Digitale,
+Option Systèmes et Réseaux, class IDOSR201.
 
 The scripts and docs come from the full internship report,
 [`Rapport_Stage_CMC.pdf`](Rapport_Stage_CMC.pdf) (French, sanitized). Each script header
 names the report chapter and PDF page it comes from. Nothing here goes beyond what the report describes.
+
+> **What is real code and what is reconstructed.** In the report, only `Join-Domain.ps1` has its full code (Annex A.1). The other scripts are reconstructed from report text and snippets, and say so in their headers. Test them in a lab before any real use.
 
 > **Note on the PDF.** Rapport_Stage_CMC.pdf is the original as submitted. It says 650 workstations and names supervisors. Repo text uses the corrected 850+ workstations, confirmed by the author on 27 Nov 2026. The PDF was left unchanged on purpose.
 
@@ -54,19 +56,19 @@ names the report chapter and PDF page it comes from. Nothing here goes beyond wh
 ## Infrastructure
 
 - Perimeter on a FortiGate firewall, behind a Cisco core and switches that serve the training poles.
-- Active Directory with GPO deployment, plus Wazuh, Proxmox and Zabbix in the topology below.
+- Active Directory with GPO deployment. The topology picture below is a general diagram: Wazuh, Zabbix and Proxmox on it are lab / future items, not CMC work described in the report. WSUS is only listed in the report as a future improvement.
 
 <div align="center">
-<picture><source media="(max-width: 600px)" srcset="assets/cmc-network-mobile.svg"><img src="assets/cmc-network.svg" width="100%" alt="Animated network topology: Internet, FortiGate, Cisco core, Active Directory, Wazuh, Proxmox and Zabbix, switches and the 10 training poles."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/cmc-network-mobile.svg"><img src="assets/cmc-network.svg" width="100%" alt="Animated network topology: Internet, FortiGate, Cisco core, Active Directory, switches and the 10 training poles. Wazuh, Zabbix and Proxmox on the picture are lab or future items, not CMC work."></picture>
 </div>
 
 ## Tech stack
 
 <div align="center">
-<img src="assets/cmc-stack.svg" width="100%" alt="Tech stack: Cisco, Fortinet, Windows Server, Active Directory, PowerShell, Docker, Proxmox, Ubuntu, Red Hat, Zabbix, Wazuh, VMware ESXi">
+<img src="assets/cmc-stack.svg" width="100%" alt="General skills picture. Used at CMC: Windows Server, Active Directory, GPO, PowerShell, FortiGate, Cisco.">
 </div>
 
-Cisco, Fortinet, Windows Server, Active Directory, PowerShell, Docker, Proxmox, Ubuntu, Red Hat, Zabbix, Wazuh, VMware ESXi.
+Used at CMC: Windows Server, Active Directory, GPO, PowerShell, Fortinet FortiGate, Cisco. The picture above shows my wider skills; items on it that are not in this list (for example Proxmox, Wazuh, Zabbix, Docker) are lab or future, not CMC work.
 
 ## What's inside
 
