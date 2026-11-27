@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 456" width="480" height="456" role="img" aria-label="Animated PowerShell terminal running Join-Domain.ps1: DNS set, naming fields typed, machine renamed and joined to the domain, time per PC falling from about 20 minutes to under 3 minutes.">
+<title>Join-Domain.ps1 demo</title>
+<defs>
+<linearGradient id="tb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d0000"/><stop offset="1" stop-color="#b30d0d"/></linearGradient>
+<clipPath id="tc"><rect class="typ" x="92.0" y="58" width="150.0" height="24"/></clipPath>
+</defs>
+<style>
+text{font-family:'Share Tech Mono','Lucida Console',Consolas,'Courier New',monospace;font-size:15px;fill:#e8dfcc;white-space:pre}
+.ln{animation-duration:20.0s;animation-iteration-count:infinite;animation-timing-function:linear}
+.pr{fill:#ffd98a}.ok{fill:#7fe39a}.in{fill:#ffd98a}.bold{font-weight:bold}
+.typ{transform-box:fill-box;transform-origin:0 50%;animation:typ 20.0s linear infinite}
+.cm{animation:cm 20.0s linear infinite}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{50%{opacity:0}}
+@keyframes a1{0%,1.0%{opacity:0}2.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a2{0%,14.0%{opacity:0}15.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a3{0%,19.0%{opacity:0}20.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a4{0%,24.0%{opacity:0}25.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a5{0%,29.0%{opacity:0}30.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a6{0%,34.0%{opacity:0}35.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a7{0%,40.0%{opacity:0}41.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a8{0%,40.0%{opacity:0}41.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a9{0%,40.0%{opacity:0}41.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a10{0%,40.0%{opacity:0}41.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a11{0%,44.0%{opacity:0}45.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a12{0%,43.99%{opacity:0}44.0%,49.99%{opacity:1}50.0%,100%{opacity:0}}
+@keyframes a13{0%,49.99%{opacity:0}50.0%,55.99%{opacity:1}56.0%,100%{opacity:0}}
+@keyframes a14{0%,55.99%{opacity:0}56.0%,61.99%{opacity:1}62.0%,100%{opacity:0}}
+@keyframes a15{0%,61.99%{opacity:0}62.0%,67.99%{opacity:1}68.0%,100%{opacity:0}}
+@keyframes a16{0%,67.99%{opacity:0}68.0%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a17{0%,72.0%{opacity:0}73.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a18{0%,72.0%{opacity:0}73.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a19{0%,72.0%{opacity:0}73.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes a20{0%,77.0%{opacity:0}78.5%,92.5%{opacity:1}99.0%,100%{opacity:0}}
+@keyframes typ{0%,3.0%{transform:scaleX(0);animation-timing-function:steps(16,end)}11.0%,100%{transform:scaleX(1)}}
+@keyframes cm{0%,3.0%{transform:translateX(-144.0px);animation-timing-function:steps(16,end);opacity:0}3.1%{opacity:1}11.0%{transform:translateX(0);opacity:1}12.5%,100%{transform:translateX(0);opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.cv,.cm{display:none}}
+</style>
+<rect x="1" y="1" width="478" height="454" rx="8" fill="#0b0708" stroke="#fbefd5" stroke-opacity=".7" stroke-width="2"/>
+<path d="M1 9 A8 8 0 0 1 9 1 H471 A8 8 0 0 1 479 9 V36 H1Z" fill="url(#tb)"/>
+<text x="14" y="24" style="font-size:14px;font-weight:bold;fill:#fbefd5">&gt;_  Windows PowerShell</text>
+<g fill="none" stroke="#fbefd5" stroke-opacity=".8" stroke-width="1.5"><path d="M404 23 H416"/><rect x="430" y="16" width="10" height="9"/><path d="M454 16 L464 25 M464 16 L454 25"/></g>
+<text x="20" y="76" class="ln" style="animation-name:a1"><tspan class="pr">PS D:\&gt;</tspan></text>
+<g clip-path="url(#tc)"><text x="92.0" y="76" class="ln cmd" style="animation-name:a1">.\Join-Domain.ps1</text></g>
+<text x="20" y="101" class="ln" style="animation-name:a2"><tspan class="ok">[OK]</tspan> DNS configure vers 192.0.2.10</text>
+<text x="20" y="126" class="ln" style="animation-name:a3">Etage (E1, E2, RDC...): <tspan class="in">E1</tspan></text>
+<text x="20" y="151" class="ln" style="animation-name:a4">Pole (DIA, LSS, GES, ART, THR...): <tspan class="in">DIA</tspan></text>
+<text x="20" y="176" class="ln" style="animation-name:a5">Salle (S01, S02, S03...): <tspan class="in">S04</tspan></text>
+<text x="20" y="201" class="ln" style="animation-name:a6">ID PC (00=Prof, 01-20=Stagiaire): <tspan class="in">00</tspan></text>
+<text x="20" y="226" class="ln" style="animation-name:a7"><tspan class="ok">[OK]</tspan> Machine E1DIAS0400 jointe au</text>
+<text x="20" y="251" class="ln" style="animation-name:a8">domaine domain.local dans</text>
+<text x="20" y="276" class="ln" style="animation-name:a9">OU=S04,OU=DIA,OU=CMC_Computers,</text>
+<text x="20" y="301" class="ln" style="animation-name:a10">DC=domain,DC=local</text>
+<text x="20" y="326" class="ln" style="animation-name:a11">Time per PC :</text>
+<text x="146.0" y="326" class="ln cv in" style="animation-name:a12;animation-timing-function:step-end">~20 min</text>
+<text x="146.0" y="326" class="ln cv in" style="animation-name:a13;animation-timing-function:step-end">14 min</text>
+<text x="146.0" y="326" class="ln cv in" style="animation-name:a14;animation-timing-function:step-end">8 min</text>
+<text x="146.0" y="326" class="ln cv in" style="animation-name:a15;animation-timing-function:step-end">4 min</text>
+<text x="146.0" y="326" class="ln ok bold" style="animation-name:a16;animation-timing-function:step-end">under 3 min</text>
+<text x="20" y="351" class="ln" style="animation-name:a17"><tspan class="ok">[ OK ]</tspan> ~20 min by hand -&gt;</text>
+<text x="20" y="376" class="ln" style="animation-name:a18">under 3 min per PC with</text>
+<text x="20" y="401" class="ln" style="animation-name:a19">Join-Domain.ps1</text>
+<g class="ln" style="animation-name:a20"><text x="20" y="426" class="ln"><tspan class="pr">PS D:\&gt;</tspan></text><rect class="cur" x="92.0" y="414" width="8" height="15" fill="#7fe39a"/></g>
+<g class="cm"><rect class="cur" x="236.0" y="64" width="8" height="15" fill="#7fe39a"/></g>
+</svg>
