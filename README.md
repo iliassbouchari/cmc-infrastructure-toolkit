@@ -1,4 +1,22 @@
-# CMC Infrastructure — Deployment, Administration & Support Toolkit
+<div align="center">
+
+<img src="assets/cmc-banner.svg" width="100%" alt="WABI - CMC Infrastructure Toolkit, PowerShell, Active Directory, GPO">
+
+# CMC Infrastructure Toolkit
+
+**Deployment, administration and support of a 650+ workstation campus**
+
+<img src="https://img.shields.io/badge/POWERSHELL-8%20SCRIPTS-fbefd5?style=for-the-badge&labelColor=7d0000" alt="8 PowerShell scripts">
+<img src="https://img.shields.io/badge/ACTIVE%20DIRECTORY-GPO%20DRIVEN-ffd98a?style=for-the-badge&labelColor=7d0000" alt="Active Directory, GPO driven">
+<img src="https://img.shields.io/badge/SANITIZED-NO%20REAL%20DATA-fbefd5?style=for-the-badge&labelColor=7d0000" alt="Sanitized, no real data">
+<a href="https://github.com/iliassbouchari"><img src="https://img.shields.io/badge/PROFILE-ILIASSBOUCHARI-ffd98a?style=for-the-badge&labelColor=7d0000" alt="Profile"></a>
+<a href="https://iliassbouchari.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-ILIASSBOUCHARI.GITHUB.IO-fbefd5?style=for-the-badge&labelColor=7d0000" alt="Portfolio"></a>
+
+</div>
+
+---
+
+## About this repo
 
 PowerShell scripts and procedures built during our end-of-studies internship at the
 **Cité des Métiers et des Compétences (CMC) Casablanca-Settat** (Feb–Apr 2026):
@@ -13,6 +31,24 @@ Systems & Networks option, class IDOSR201.
 > placeholder: domain name (`domain.local`), DC IP (`192.0.2.10`, TEST-NET-1),
 > server hostname (`SRV-DC01`), account names (`TECH_ADMIN`) and all passwords
 > (interactive prompts). Adapt them to your own environment before use.
+
+## The toolkit at a glance
+
+<div align="center">
+<img src="assets/cmc-terminal.svg" width="100%" alt="PowerShell terminal listing the toolkit scripts and the main projects">
+</div>
+
+## Infrastructure it runs on
+
+<div align="center">
+<img src="assets/cmc-network.svg" width="100%" alt="Animated network topology: Internet, FortiGate, Cisco core, Active Directory, Wazuh, Proxmox, Zabbix and PC sectors">
+</div>
+
+## Tech stack
+
+<div align="center">
+<img src="assets/cmc-stack.svg" width="100%" alt="Tech stack: Cisco, Fortinet, Windows Server, Active Directory, PowerShell, Docker, Proxmox, Ubuntu, Red Hat, Zabbix, Wazuh, VMware ESXi">
+</div>
 
 ## What's inside
 
@@ -49,3 +85,11 @@ Systems & Networks option, class IDOSR201.
   (secure-channel resets with `netdom resetpwd`, permissions).
 - Introduction to perimeter security on the site's Fortinet FortiGate firewall
   (policies, logs, dashboard).
+
+---
+
+<div align="center">
+
+<a href="https://github.com/iliassbouchari"><img src="https://img.shields.io/badge/MORE%20WORK-GITHUB.COM%2FILIASSBOUCHARI-fbefd5?style=for-the-badge&labelColor=7d0000" alt="More work on my profile"></a>
+
+</div>
