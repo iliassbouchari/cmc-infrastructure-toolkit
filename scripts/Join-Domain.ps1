@@ -8,6 +8,11 @@
       2. Asks the operator for the naming fields (floor, pole, room, PC id)
       3. Checks that the DC answers, then renames the PC and joins the domain
          directly into the right OU, then restarts.
+    Poles: the pole is typed at the prompt and used as-is for the OU name and the machine
+    name, so no pole is hard-coded and none was lost in the merge. Pole codes named in the
+    report: DIA, LSS, GES, ART, AGR, THR (chapter 3.3). Pole OUs named in chapter 3.2: DIA,
+    AGRO, ART, GESTION, LSS-FS, plus ADMINISTRATION as a separate root OU. The report does
+    not list the other poles' codes, so none are invented here.
     Per the report, this cut the work per machine from about 20 minutes to under 3 minutes.
 
 .NOTES
@@ -22,6 +27,8 @@
 
 .EXAMPLE
     .\Join-Domain.ps1
+    # Etage E1, Pole DIA, Salle S04, ID PC 00 -> machine E1DIAS0400, joined to domain.local in
+    # OU=S04,OU=DIA,OU=CMC_Computers,DC=domain,DC=local
 .EXAMPLE
     .\Join-Domain.ps1 -WhatIf
 #>
