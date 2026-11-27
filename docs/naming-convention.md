@@ -2,6 +2,8 @@
 
 Source: Rapport_Stage_CMC.pdf, chapter 3.3 (PDF p. 7) and annex B (PDF p. 15).
 
+> Rapport_Stage_CMC.pdf is the original as submitted. It says 650 workstations and names supervisors. Repo text uses the corrected 850+ workstations, confirmed by the author on 27 Nov 2026. The PDF was left unchanged on purpose.
+
 General format: `[Floor][Pole][Room][PC_ID]`, 10 characters total.
 
 | Field | Size | Description | Examples |
