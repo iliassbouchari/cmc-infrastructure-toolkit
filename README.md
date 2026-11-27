@@ -17,7 +17,7 @@
 ## About this repo
 
 PowerShell scripts and procedures built during our end-of-studies internship at the
-**Cité des Métiers et des Compétences (CMC) Casablanca-Settat** (Feb–Apr 2026):
+**Cité des Métiers et des Compétences (CMC) Casablanca-Settat** (Jan 2026 – Jul 2026):
 deployment, administration and support of the systems and network infrastructure:
 an 850+ workstation park across 10 training poles, centralized under a single
 Active Directory domain with GPO-driven software deployment and hardening.
@@ -44,11 +44,17 @@ names the report chapter and PDF page it comes from. Nothing here goes beyond wh
 
 ## The toolkit at a glance
 
+- 850+ workstations across 10 training poles, centralized under a single Active Directory domain with a 3-level OU tree.
+- 8 PowerShell scripts and 5 docs: domain join (about 20 min down to under 3 per PC), GPO software deployment and workstation hardening.
+
 <div align="center">
 <picture><source media="(max-width: 600px)" srcset="assets/cmc-terminal-mobile.svg"><img src="assets/cmc-terminal.svg" width="100%" alt="Animated PowerShell terminal running Join-Domain.ps1: DNS set, naming fields entered, machine joined to the domain, time per PC falling from about 20 minutes to under 3 minutes."></picture>
 </div>
 
 ## Infrastructure
+
+- Perimeter on a FortiGate firewall, behind a Cisco core and switches that serve the training poles.
+- Active Directory with GPO deployment, plus Wazuh, Proxmox and Zabbix in the topology below.
 
 <div align="center">
 <picture><source media="(max-width: 600px)" srcset="assets/cmc-network-mobile.svg"><img src="assets/cmc-network.svg" width="100%" alt="Animated network topology: Internet, FortiGate, Cisco core, Active Directory, Wazuh, Proxmox and Zabbix, switches and the 10 training poles."></picture>
