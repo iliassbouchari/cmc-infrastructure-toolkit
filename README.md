@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/cmc-banner.svg" width="100%" alt="CMC Infrastructure Toolkit. Deployment, administration and support of an 850+ workstation campus.">
+<picture><source media="(max-width: 600px)" srcset="assets/cmc-banner-mobile.svg"><img src="assets/cmc-banner.svg" width="100%" alt="CMC Infrastructure Toolkit. Deployment, administration and support of an 850+ workstation campus."></picture>
 
 <img src="https://img.shields.io/badge/POWERSHELL-8%20SCRIPTS-fbefd5?style=for-the-badge&labelColor=7d0000" alt="8 PowerShell scripts">
 <img src="https://img.shields.io/badge/ACTIVE%20DIRECTORY-GPO%20DRIVEN-ffd98a?style=for-the-badge&labelColor=7d0000" alt="Active Directory, GPO driven">
@@ -29,6 +29,8 @@ The scripts and docs come from the full internship report,
 [`Rapport_Stage_CMC.pdf`](Rapport_Stage_CMC.pdf) (French, sanitized). Each script header
 names the report chapter and PDF page it comes from. Nothing here goes beyond what the report describes.
 
+> **Note on the PDF.** Rapport_Stage_CMC.pdf is the original as submitted. It says 650 workstations and names supervisors. Repo text uses the corrected 850+ workstations, confirmed by the author on 27 Nov 2026. The PDF was left unchanged on purpose.
+
 > **Sanitized for publication.** Every real identifier has been replaced by a
 > placeholder. Adapt them to your own environment before use.
 >
@@ -43,13 +45,13 @@ names the report chapter and PDF page it comes from. Nothing here goes beyond wh
 ## The toolkit at a glance
 
 <div align="center">
-<img src="assets/cmc-terminal.svg" width="100%" alt="Animated PowerShell terminal running Join-Domain.ps1: DNS set, naming fields entered, machine joined to the domain, time per PC falling from about 20 minutes to under 3 minutes.">
+<picture><source media="(max-width: 600px)" srcset="assets/cmc-terminal-mobile.svg"><img src="assets/cmc-terminal.svg" width="100%" alt="Animated PowerShell terminal running Join-Domain.ps1: DNS set, naming fields entered, machine joined to the domain, time per PC falling from about 20 minutes to under 3 minutes."></picture>
 </div>
 
 ## Infrastructure
 
 <div align="center">
-<img src="assets/cmc-network.svg" width="100%" alt="Animated network topology: Internet, FortiGate, Cisco core, Active Directory, Wazuh, Proxmox and Zabbix, switches and the 10 training poles.">
+<picture><source media="(max-width: 600px)" srcset="assets/cmc-network-mobile.svg"><img src="assets/cmc-network.svg" width="100%" alt="Animated network topology: Internet, FortiGate, Cisco core, Active Directory, Wazuh, Proxmox and Zabbix, switches and the 10 training poles."></picture>
 </div>
 
 ## Tech stack
@@ -66,10 +68,10 @@ Cisco, Fortinet, Windows Server, Active Directory, PowerShell, Docker, Proxmox, 
 
 | Script | What it does | Report chapter |
 |--------|--------------|----------------|
-| [`Join-Domain.ps1`](scripts/Join-Domain.ps1) | USB-run domain join: sets DNS to the DC, asks for the naming fields, renames the PC and joins the domain directly into the right OU. Cut per-machine setup from about 20 min to under 3 min. | 4.1 and annex A.1 |
+| [`Join-Domain.ps1`](scripts/Join-Domain.ps1) | USB-run domain join: sets DNS to the DC, asks for the naming fields, renames the PC and joins the domain directly into the right OU. Pole is typed at the prompt; the report's pole codes are DIA, LSS, GES, ART, AGR, THR (see header). Cut per-machine setup from about 20 min to under 3 min. | 4.1 and annex A.1 |
 | [`Deploy-App.ps1`](scripts/Deploy-App.ps1) | Silent EXE deployment through a GPO startup script, with presence check, log and public-desktop shortcut (GNS3 example). The silent arguments for GNS3, Packet Tracer, Postman, Power BI, Python, VMware, VS Code and XAMPP are in the header. | 4.2.2 |
 | [`Remove-Office365.ps1`](scripts/Remove-Office365.ps1) | Click-to-Run Office 365 removal in 4 phases (services, ODT uninstall, Appx leftovers, registry). | 4.3 |
-| [`AdvancedStartup.ps1`](scripts/AdvancedStartup.ps1) | Disables WinRE entry points, countering the `utilman.exe` to `cmd.exe` SYSTEM-prompt attack. Rebuilt from the report's prose (no code block). | 4.4.1 and 2.3.3 |
+| [`AdvancedStartup.ps1`](scripts/AdvancedStartup.ps1) | Disables WinRE entry points, countering the `utilman.exe` to `cmd.exe` SYSTEM-prompt attack. AdvancedStartup was rebuilt from report text, no code block in the report. Hibernate setting omitted because it was not in the report (no value given). | 4.4.1 and 2.3.3 |
 | [`Manage-LocalUsers.ps1`](scripts/Manage-LocalUsers.ps1) | Idempotent local-account hygiene: creates the technical admin account and removes unauthorized local users, with event log entries. | 4.4.2 |
 | [`Set-HPBiosPassword.ps1`](scripts/Set-HPBiosPassword.ps1) | Sets the BIOS admin password on HP machines with HP BiosConfigUtility64, GPO-deployable. | 4.4.3 |
 | [`Enable-PsExecSharing.ps1`](scripts/Enable-PsExecSharing.ps1) | Enables remote administration: SMB service, firewall ports 445 and 135, `LocalAccountTokenFilterPolicy`. | 4.4.4 |
@@ -102,11 +104,11 @@ Cisco, Fortinet, Windows Server, Active Directory, PowerShell, Docker, Proxmox, 
 - Designed the AD architecture: single domain, 3-level OU tree (administration /
   poles / rooms) enabling per-pole GPO targeting.
 - Automated workstation onboarding from ~20 minutes to under 3 minutes per machine.
-- Deployed software to 850+ machines by GPO (native MSI + PowerShell for EXE).
+- Deployed software to 850+ machines by GPO (native MSI + PowerShell for EXE). MSI and printer GPO steps have no code in the report: see [`docs/helpdesk.md`](docs/helpdesk.md#procedures-with-no-code-in-the-report).
 - Hardened the park against a password-reset attack actively exploited by students
   (WinRE + utilman.exe swap) with script + GPO + NTFS ACLs.
 - Day-to-day helpdesk: network printers, AV equipment, domain incidents
-  (secure-channel resets with `netdom resetpwd`, permissions).
+  (secure-channel resets with `netdom resetpwd`, documented from report text in [`docs/helpdesk.md`](docs/helpdesk.md#procedures-with-no-code-in-the-report); permissions).
 - Introduction to perimeter security on the site's Fortinet FortiGate firewall
   (policies, logs, dashboard).
 
