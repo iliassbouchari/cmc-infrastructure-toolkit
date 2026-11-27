@@ -2,6 +2,8 @@
 
 Source: Rapport_Stage_CMC.pdf, chapter 2.3 (PDF p. 5-6).
 
+> Rapport_Stage_CMC.pdf is the original as submitted. It says 650 workstations and names supervisors. Repo text uses the corrected 850+ workstations, confirmed by the author on 27 Nov 2026. The PDF was left unchanged on purpose.
+
 ## Repairing corrupted boot sectors (Hiren's Boot CD PE)
 
 Typical on machines hit by sudden power cuts or failed installs. Symptoms:
